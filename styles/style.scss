@@ -1,0 +1,173 @@
+%flex-center {
+  display: flex;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+  font-family: "Geometria", sans-serif;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 75px;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin: 0;
+  font-family: "Geometria", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 36px;
+}
+
+p {
+  margin: 0;
+  font-family: "Geometria", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+a {
+  margin: 0;
+  font-family: "Geometria", sans-serif;
+}
+
+header {
+  margin: 0 auto;
+  background: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1920px;
+  height: 877px;
+}
+
+.header,
+.first {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+
+.header {
+  padding-top: 30px;
+  @extend %flex-center;
+  justify-content: space-between;
+}
+
+.header_menu {
+  @extend %flex-center;
+  gap: 20px;
+}
+
+.header_menu_btn {
+  background: url(../images/menu_btn.svg);
+  height: 29px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+.header_logo {
+  @extend %flex-center;
+  gap: 30px;
+}
+
+.header_logo_text {
+  max-width: 195px;
+}
+
+.header_phone {
+  display: flex;
+  flex-direction: column;
+}
+
+.header_phone_num {
+  font-size: 30px;
+  line-height: 49px;
+  width: 273px;
+  height: 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.header_phone_btn {
+  background: none;
+  border: 1px solid #2a94e2;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 272px;
+  height: 55px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.first_title {
+  width: 586px;
+  height: 190px;
+}
+
+.first_subtitle {
+  width: 540px;
+  height: 52px;
+  margin-top: 47px;
+}
+
+.first_utp {
+  margin-top: 49px;
+  display: flex;
+  gap: 50px;
+}
+
+.first_utp_offer {
+  @extend %flex-center;
+  gap: 20px;
+}
+
+.first_utp_num {
+  font-weight: 300;
+  font-size: 80px;
+}
+
+.first_utp_text1 {
+  width: 91px;
+}
+
+.first_utp_text2 {
+  width: 129px;
+}
+
+.first_utp_text3 {
+  width: 118px;
+}
+
+.first_gift {
+  margin-top: 50px;
+  @extend %flex-center;
+  gap: 20px;
+}
+
+.first_gift_text {
+  width: 376px;
+}
+
+.first_gift_text_span {
+  font-weight: 700;
+}
+
+.first_btn {
+  margin-top: 40px;
+  background: #2a94e2;
+  border: 2px solid #2a94e2;
+  border-radius: 5px;
+  width: 360px;
+  height: 70px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #fff;
+  cursor: pointer;
+}
