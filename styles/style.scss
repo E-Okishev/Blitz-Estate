@@ -3,37 +3,66 @@
   align-items: center;
 }
 
+%font {
+  margin: 0;
+  font-family: "Geometria", sans-serif;
+}
+
 body {
   margin: 0;
 }
 
 h1 {
-  margin: 0;
-  font-family: "Geometria", sans-serif;
+  @extend %font;
   font-weight: 900;
   font-size: 50px;
   line-height: 75px;
   text-transform: uppercase;
 }
 
+h2 {
+  @extend %font;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 48px;
+  padding: 60px 0 30px 0;
+}
+
+h3 {
+  @extend %font;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 33px;
+}
+
 h4 {
-  margin: 0;
-  font-family: "Geometria", sans-serif;
+  @extend %font;
   font-weight: 400;
   font-size: 22px;
   line-height: 36px;
 }
 
 p {
-  margin: 0;
-  font-family: "Geometria", sans-serif;
+  @extend %font;
   font-size: 16px;
   line-height: 26px;
 }
 
 a {
+  @extend %font;
+}
+
+button {
+  padding: 0;
+  @extend %font;
+  cursor: pointer;
+}
+
+hr {
+  height: 2px;
+  background: #f1f1f1;
+  border: none;
   margin: 0;
-  font-family: "Geometria", sans-serif;
 }
 
 header {
@@ -47,7 +76,9 @@ header {
 }
 
 .header,
-.first {
+.first,
+.quiz,
+.question {
   margin: 0 auto;
   max-width: 1140px;
 }
@@ -68,7 +99,6 @@ header {
   height: 29px;
   width: 40px;
   border: none;
-  cursor: pointer;
 }
 
 .header_logo {
@@ -169,5 +199,85 @@ header {
   font-size: 20px;
   line-height: 30px;
   color: #fff;
+}
+
+.quiz_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 42px;
+}
+
+.question {
+  border: 3px solid #f6f6f6;
+  display: flex;
+}
+
+.question_answer {
+  max-width: 698px;
+  margin: 43px 40px 18px 36px;
+}
+
+.question_answer_text {
+  display: flex;
+  gap: 30px;
+}
+
+.question_answer_option {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   cursor: pointer;
+}
+
+.question_answer_option_img {
+  height: 217px;
+  width: 334px;
+}
+
+.question_answer_options_text {
+  font-weight: 700;
+  opacity: 0.5;
+  margin: 25px 0 25px 0;
+}
+
+.question_answer_number_questions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.question_answer_number_questions_btn {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.question_answer_number_questions_btn_style {
+  border: none;
+  background: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #2a94e2;
+}
+
+.verticalLine {
+  background-color: #f6f6f6;
+  width: 3px;
+}
+
+.question_utp {
+  margin: 40px 44px 31px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.question_utp_point {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
 }
