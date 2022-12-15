@@ -8,6 +8,16 @@
   font-family: "Geometria", sans-serif;
 }
 
+%service-settings {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
 body {
   margin: 0;
 }
@@ -78,7 +88,8 @@ header {
 .header,
 .first,
 .quiz,
-.question {
+.question,
+.service {
   margin: 0 auto;
   max-width: 1140px;
 }
@@ -266,7 +277,7 @@ header {
 
 .verticalLine {
   background-color: #f6f6f6;
-  width: 3px;
+  width: 5px;
 }
 
 .question_utp {
@@ -280,4 +291,45 @@ header {
   display: flex;
   align-items: flex-start;
   gap: 24px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service_list, .service_list_2-1 {
+  display: flex;
+  gap: 10px;
+}
+
+.service_list_1_live {
+  width: 373px;
+  height: 610px;
+  background-image: url(../images/artplay_3.png);
+  @extend %service-settings;
+
+}
+
+.service_list_2-1_home {
+  width: 374px;
+  height: 300px;
+  background-image: url(../images/home.png);
+  @extend %service-settings;
+}
+
+.service_list_2-1_stonks {
+  width: 373px;
+  height: 300px;
+  background-image: url(../images/stonks.png);
+  @extend %service-settings;
+}
+
+.service_list_2_board {
+  width: 757px;
+  height: 300px;
+  background-image: url(../images/board.png);
+  @extend %service-settings;
+  margin-top: 10px;
 }
