@@ -12,6 +12,9 @@ button, a, p, h5, h4, h3, h2, h1 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.service_list_3_eat, .service_list_3_hends, .service_list_2_board, .service_list_2-1_stonks, .service_list_2-1_home, .service_list_1_live {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -458,10 +461,16 @@ header {
   justify-content: center;
   transition: 0.4s;
   margin-top: 16px;
+  gap: 15px;
 }
 
 .btn-primary:hover {
-  background: #2A94E2;
+  background: #2a94e2;
   color: #fff;
-  border: #2A94E2;
+  border: #2a94e2;
+}
+
+.arrow {
+  margin-top: 40px;
+  margin-bottom: 60px;
 }/*# sourceMappingURL=style.css.map */
