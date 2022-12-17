@@ -52,6 +52,13 @@ h4 {
   line-height: 36px;
 }
 
+h5 {
+  @extend %font;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 33px;
+}
+
 p {
   @extend %font;
   font-size: 16px;
@@ -390,6 +397,7 @@ header {
   border: 2px solid #f6f6f6;
   box-sizing: border-box;
   background: none;
+  transition: .4s;
 }
 .button_group_button:hover {
   width: 229px;
@@ -401,4 +409,79 @@ header {
   background: #2a94e2;
   border: none;
   color: #fff;
+}
+
+.line {
+  margin-top: 30px;
+  gap: 30px;
+  display: flex;
+}
+
+.card {
+  width: 555px;
+  height: 571px;
+  cursor: pointer;
+}
+
+.card-body {
+  margin: 30px 30px 0 30px;
+  padding: 0;
+}
+
+.card-name {
+  margin-bottom: 20px;
+}
+
+.card-text {
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.card-price-and-square {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.full-price {
+  font-weight: 300;
+  font-size: 33px;
+  line-height: 54px;
+  margin-bottom: 2px;
+}
+
+.price-metr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.card-square {
+  height: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  height: 60px;
+  width: 100%;
+  border-radius: 0;
+  background: #f6f6f6;
+  border: 2px solid #f6f6f6;
+  color: #000;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .4s;
+  margin-top: 16px;
+}
+
+.btn-primary:hover {
+  background: #2A94E2;
+  color: #fff;
+  border: #2A94E2;
 }
