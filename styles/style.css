@@ -91,7 +91,8 @@ header {
 .service,
 .shop,
 .button_group,
-.cards {
+.cards,
+.about-info {
   margin: 0 auto;
   max-width: 1140px;
 }
@@ -473,4 +474,37 @@ header {
 .arrow {
   margin-top: 40px;
   margin-bottom: 60px;
+}
+
+.about-info {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+  height: 695px;
+}
+
+.about {
+  background: #f6f6f6;
+}
+
+.about-text {
+  max-width: 555px;
+}
+
+.about-title {
+  padding-top: 0;
+}
+
+.about-text-p {
+  margin-bottom: 20px;
+}
+
+.about-button {
+  width: 270px;
+  margin-top: 0;
+}
+
+.about-slider {
+  height: 566px;
+  width: 555px;
 }/*# sourceMappingURL=style.css.map */
