@@ -1,4 +1,5 @@
-.first_gift, .first_utp_offer, .header_logo, .header_menu, .header {
+.first_gift, .first_utp_offer, .header_logo,
+.footer-logo, .header_menu, .header {
   display: flex;
   align-items: center;
 }
@@ -24,6 +25,11 @@ button, a, p, h5, h4, h3, h2, h1 {
 a {
   text-decoration: none;
   color: black;
+}
+
+.footer-contact-requisites, .boss-info, .link-group, .contact, .about-info, .line, .question_answer_text {
+  display: flex;
+  gap: 30px;
 }
 
 body {
@@ -80,13 +86,17 @@ hr {
 }
 
 header {
-  margin: 0 auto;
   background: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   max-width: 1920px;
   height: 877px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #535860;
 }
 
 .header,
@@ -98,7 +108,9 @@ header {
 .button_group,
 .cards,
 .about-info,
-.directions {
+.directions,
+.boss-info,
+.footer {
   margin: 0 auto;
   max-width: 1140px;
 }
@@ -119,20 +131,25 @@ header {
   border: none;
 }
 
-.header_logo {
+.header_logo,
+.footer-logo {
   gap: 30px;
 }
 
-.header_logo_text {
+.header_logo_text,
+.footer_logo_text {
   max-width: 195px;
 }
 
-.header_phone {
+.header_phone,
+.footer_phone {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.header_phone_num {
+.header_phone_num,
+.footer_phone_num {
   font-size: 30px;
   line-height: 49px;
   width: 273px;
@@ -230,11 +247,6 @@ header {
 .question_answer {
   max-width: 698px;
   margin: 43px 40px 18px 36px;
-}
-
-.question_answer_text {
-  display: flex;
-  gap: 30px;
 }
 
 .question_answer_option {
@@ -401,8 +413,6 @@ header {
 
 .line {
   margin-top: 30px;
-  gap: 30px;
-  display: flex;
 }
 
 .card {
@@ -481,8 +491,6 @@ header {
 }
 
 .about-info {
-  gap: 30px;
-  display: flex;
   align-items: center;
   height: 695px;
 }
@@ -519,9 +527,7 @@ header {
 }
 
 .contact {
-  display: flex;
   flex-wrap: wrap;
-  gap: 30px;
 }
 
 .contact-title {
@@ -566,8 +572,6 @@ header {
 }
 
 .link-group {
-  display: flex;
-  gap: 30px;
   margin-top: 60px;
   margin-bottom: 50px;
 }
@@ -577,4 +581,85 @@ header {
   line-height: 50px;
   color: #2A94E2;
   text-decoration: underline;
+}
+
+.last-block {
+  background-color: #EEF3FA;
+}
+
+.boss-info {
+  align-items: flex-end;
+}
+
+.boss-info-text {
+  margin: 60px 0 60px 0;
+}
+
+.boss-photo {
+  width: 445px;
+  height: 534px;
+}
+
+.about-boss-text {
+  margin-top: 20px;
+}
+
+.boss-btn {
+  width: 270px;
+  margin-top: 20px;
+}
+
+.about-boss-title {
+  width: 485px;
+}
+
+.footer {
+  height: 238px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-contact-logo {
+  display: flex;
+  gap: 64px;
+}
+
+.footer_logo_text,
+.footer_phone_num,
+.footer_phone_mail {
+  color: #fff;
+}
+
+.footer-contact-info,
+.footer-contact-adress {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer-contact-adress {
+  width: 322px;
+}
+
+.footer-contact-info {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.footer_phone_mail {
+  font-size: 22px;
+  line-height: 36px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.footer_phone_btn {
+  background: #FFFFFF;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  width: 272px;
+  height: 55px;
+  border: none;
+  margin-top: 10px;
 }/*# sourceMappingURL=style.css.map */
